@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0</Version>
+    <Authors>stulzq</Authors>
+    <Company>stulzq</Company>
+    <Description>Twitter的分布式全局唯一ID，雪花（snowflake）算法。.NET Core 2.0版</Description>
+    <PackageLicenseUrl>https://github.com/ccollie/snowflake-net/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageIconUrl>http://images2015.cnblogs.com/blog/658978/201612/658978-20161204125305771-1990804689.jpg</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>

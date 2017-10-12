@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowflake.Net", "Snowflake\Snowflake.Net.csproj", "{A964980D-9DF4-44F2-914E-FDEB000552D6}"
 EndProject
@@ -11,9 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowflake.ZConsole", "Snowf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{370E2EA8-DAFA-47FF-87E7-B3AC6596ABB9}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Demo.Core", "Demo.Core\Demo.Core.xproj", "{E2E6440B-E15E-49EF-B116-8DD05292D77D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core", "Demo.Core\Demo.Core.csproj", "{E2E6440B-E15E-49EF-B116-8DD05292D77D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Snowflake.Net.Core", "Snowflake.Net.Core\Snowflake.Net.Core.xproj", "{403B0A20-BDBA-404B-A406-2D26B13A105C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snowflake.Net.Core", "Snowflake.Net.Core\Snowflake.Net.Core.csproj", "{403B0A20-BDBA-404B-A406-2D26B13A105C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowflake.Core", "Snowflake.Core\Snowflake.Core.csproj", "{B101BA69-1F0F-49A6-ADD0-2C45DCE59DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{035FAA3E-6FFE-49DE-A32F-B896103029E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SnowflakeDemo", "SnowflakeDemo", "{55E76059-9224-43DA-8C84-051E51C9D1B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowflake.Core2.Test", "Snowflake.Core2.Test\Snowflake.Core2.Test.csproj", "{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,8 +53,26 @@ Global
 		{403B0A20-BDBA-404B-A406-2D26B13A105C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{403B0A20-BDBA-404B-A406-2D26B13A105C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{403B0A20-BDBA-404B-A406-2D26B13A105C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B101BA69-1F0F-49A6-ADD0-2C45DCE59DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B101BA69-1F0F-49A6-ADD0-2C45DCE59DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B101BA69-1F0F-49A6-ADD0-2C45DCE59DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B101BA69-1F0F-49A6-ADD0-2C45DCE59DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAEE4150-2873-49BC-BE3C-B514FF416064} = {035FAA3E-6FFE-49DE-A32F-B896103029E5}
+		{477B1CFF-55C1-46F7-A5A3-D1652C0DD5E1} = {035FAA3E-6FFE-49DE-A32F-B896103029E5}
+		{370E2EA8-DAFA-47FF-87E7-B3AC6596ABB9} = {55E76059-9224-43DA-8C84-051E51C9D1B5}
+		{E2E6440B-E15E-49EF-B116-8DD05292D77D} = {55E76059-9224-43DA-8C84-051E51C9D1B5}
+		{3C9A3ED6-7FC1-4F51-9CB3-6C73F6F016D4} = {035FAA3E-6FFE-49DE-A32F-B896103029E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AFF5B89-37EC-4514-9F24-B37EE4EBEA5E}
 	EndGlobalSection
 EndGlobal
