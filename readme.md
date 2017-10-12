@@ -1,6 +1,6 @@
 # Snowflake.Net
 
-# usage
+# Usage
 
 ```csharp
 var worker = new IdWorker(1, 1);
