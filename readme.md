@@ -1,6 +1,6 @@
-#Snowflake.Net
+# Snowflake.Net
 
-#usage
+# usage
 
 ```csharp
 var worker = new IdWorker(1, 1);
@@ -12,5 +12,5 @@ A port of  Twitter's [Snowflake](https://github.com/twitter/snowflake)  algorith
 
 Snowflake is a service for generating unique ID numbers at high scale.
 
-###License
+### License
 Apache 2.0
