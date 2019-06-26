@@ -44,7 +44,11 @@ namespace Snowflake.Core
             internal set { _sequence = value; }
         }
 
-        public IdWorker(long workerId, long datacenterId, long sequence = 0L)
+        private static readonly Lazy<IdWorker> _worker = new Lazy<IdWorker>(() => new IdWorker(1, 1));
+
+        public static IdWorker Instance()=> _worker.Value;
+    
+        private IdWorker(long workerId, long datacenterId, long sequence = 0L)
         {
             // 如果超出范围就抛出异常
             if (workerId > MaxWorkerId || workerId < 0)

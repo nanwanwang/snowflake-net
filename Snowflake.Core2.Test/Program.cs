@@ -10,7 +10,7 @@ namespace Snowflake.Core2.Test
     {
 		private static int N = 2000000;
 	    private static HashSet<long> set = new HashSet<long>();
-	    private static IdWorker worker = new IdWorker(1, 1);
+	    private static IdWorker worker = IdWorker.Instance();
 	    private static int taskCount = 0;
 
 	    static void Main(string[] args)
