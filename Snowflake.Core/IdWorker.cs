@@ -46,7 +46,7 @@ namespace Snowflake.Core
 
         private static readonly Lazy<IdWorker> _worker = new Lazy<IdWorker>(() => new IdWorker(1, 1));
 
-        public static IdWorker Instance()=> _worker.Value;
+        public static IdWorker Instance=> _worker.Value;
     
         private IdWorker(long workerId, long datacenterId, long sequence = 0L)
         {
